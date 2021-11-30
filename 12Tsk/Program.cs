@@ -48,7 +48,7 @@ namespace _12Tsk
         public static double x;
         public static double y;
 
-      
+       //Метод для вычисления длины окружности
        public static void Length()
        {
             if (rad >= 0)
@@ -60,7 +60,8 @@ namespace _12Tsk
             {
                 Console.WriteLine("Длина окружности не определена. Радиус отриательный или равен нулю.");
             }          
-        }      
+        }
+        //Метод для вычисления площади окружности
         public static void Area()
         {
             if (rad > 0)
@@ -73,6 +74,7 @@ namespace _12Tsk
                 Console.WriteLine("Площадь окружности не определена. Радиус отриательный или равен нулю.");
             }
         }
+        //Метод для проверки точки принадлежности к окружности
         public static void CoordCheck()
         {
             double chk = Math.Sqrt(Math.Pow((x-x0), 2) + Math.Pow((y-y0), 2));
